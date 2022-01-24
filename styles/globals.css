@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
 }
 
-main {
+/* main {
   padding: 5rem 0;
   flex: 1;
   display: flex;
@@ -32,4 +32,4 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */

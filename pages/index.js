@@ -2,7 +2,11 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
-export default function Home() {
+import Link from 'next/link';
+
+import { withSSRContext} from 'aws-amplify';
+
+export default function Home({props, signOut, user}) {
   return (
     <div className="container">
       <Head>
@@ -18,6 +22,17 @@ export default function Home() {
         <p>
           Hello world
         </p>
+        <p>
+          {JSON.stringify(props.data)}
+        </p>
+        {/* {props.ret.data.listSjds.items.map(item => { */}
+          {/* return <p>{item.FirstName}</p> */}
+        {/* })} */}
+
+        <div><pre>{JSON.stringify(user,null,2)}</pre></div>
+          
+        <Link href="/other"><a>other</a></Link>
+        <button onClick={signOut}>Sign Out</button>
       </main>
 
       <Footer />
