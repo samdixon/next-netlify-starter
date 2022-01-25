@@ -8,8 +8,8 @@ export default function other({props}) {
 }
 
 export async function getServerSideProps(context) {
-    var q = `query listSjdTables {
-      listSjdTables {
+    var q = `query listSjdDummyTables {
+      listSjdDummyTables {
         items {
           FirstName
         }
