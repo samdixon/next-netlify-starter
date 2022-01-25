@@ -15,10 +15,10 @@ export async function getServerSideProps(context) {
         }
       }
     }`
-  
-    const { API } = withSSRContext(context)
+    const SSR = withSSRContext(context)
+    console.log(SSR)
     try {
-      var data = await API.graphql({
+      var data = await SSR.API.graphql({
         query: q,
         authMode: "AMAZON_COGNITO_USER_POOLS",
       })  
