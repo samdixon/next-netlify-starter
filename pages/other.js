@@ -1,9 +1,12 @@
 import { withSSRContext} from 'aws-amplify';
+import { Amplify } from 'aws-amplify';
 
-
-export default function other({props}) {
+export default function other({props, user}) {
     return (
-        <p>{JSON.stringify(props.data)}</p>
+        <>
+          <p>{JSON.stringify(props.data)}</p>
+          <p>{JSON.stringify(user)}</p>
+        </>
     )
 }
 

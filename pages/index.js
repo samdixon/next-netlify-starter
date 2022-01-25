@@ -31,7 +31,7 @@ export default function Home({props, signOut, user}) {
 
         <div><pre>{JSON.stringify(user,null,2)}</pre></div>
           
-        <Link href="/other"><a>other</a></Link>
+        <Link href="/other" user={user}><a>other</a></Link>
         <button onClick={signOut}>Sign Out</button>
       </main>
 
