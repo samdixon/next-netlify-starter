@@ -10,7 +10,7 @@ export default function Home({props, signOut, user}) {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Vercel!</title>
+        <title>Next.js Vercel2!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
