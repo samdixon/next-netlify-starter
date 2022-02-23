@@ -19,4 +19,4 @@ function Application({ Component, pageProps, signOut, user }) {
   return <Component signOut={signOut} user={user} props={pageProps} />
 }
 
-export default withAuthenticator(Application)
+export default Application
